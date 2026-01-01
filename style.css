@@ -150,7 +150,7 @@ nav {
 }
 
 .top-image {
-    width: 80%;         /* Slightly bigger than original 30% */
+    width: 120%;         /* Slightly bigger than original 30% */
     height: 450px;      /* Slightly bigger than standard 300px */
     object-fit: cover;
     border-radius: 10px;

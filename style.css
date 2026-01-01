@@ -150,7 +150,7 @@ nav {
 }
 
 .top-image {
-    width: 120%;         /* Slightly bigger than original 30% */
+    width: 100%;         /* Slightly bigger than original 30% */
     height: 450px;      /* Slightly bigger than standard 300px */
     object-fit: cover;
     border-radius: 10px;
@@ -169,7 +169,7 @@ nav {
 }
 
 .gallery-grid img {
-    width: 100%;
+    width: 500%;
     height: 300px; /* Restoring the size you gave for all other images */
     object-fit: cover;
     border-radius: 10px;

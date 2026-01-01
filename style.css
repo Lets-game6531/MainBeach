@@ -169,7 +169,7 @@ nav {
 }
 
 .gallery-grid img {
-    width: 500%;
+    width: 50%;
     height: 300px; /* Restoring the size you gave for all other images */
     object-fit: cover;
     border-radius: 10px;

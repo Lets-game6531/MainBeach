@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Pacifico&display=swap');
 
 :root {
-    --primary-blue: #0e86d4; /* Ocean Blue */
-    --light-sand: #fbf9f4;    /* Warm White */
-    --accent-gold: #f4d03f;   /* Sun */
+    --primary-blue: #0e86d4;
+    --light-sand: #fbf9f4;
+    --accent-gold: #f4d03f;
     --text-dark: #2c3e50;
     --text-light: #ffffff;
     --airbnb: #ff385c;
@@ -67,7 +67,6 @@ nav {
     color: var(--primary-blue);
 }
 
-/* Mobile Menu Button */
 .hamburger {
     display: none;
     font-size: 1.5rem;
@@ -144,7 +143,25 @@ nav {
     margin-bottom: 40px;
 }
 
-/* Gallery Grid */
+/* --- NEW: TOP IMAGE STYLING --- */
+.top-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-image {
+    width: 60%;         /* Slightly bigger than original 30% */
+    height: 450px;      /* Slightly bigger than standard 300px */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.top-image:hover {
+    transform: scale(1.02);
+}
+
+/* --- STANDARD GALLERY GRID (THE REST) --- */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -153,16 +170,10 @@ nav {
 
 .gallery-grid img {
     width: 100%;
-    height: 300px; /* Standard size for most images */
+    height: 300px; /* Restoring the size you gave for all other images */
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s;
-}
-
-/* NEW: Styles the TOP photo ONLY to be bigger */
-.featured-img {
-    height: 600px !important; 
-    grid-column: 1 / -1;      /* Spans full width of the container */
 }
 
 .gallery-grid img:hover {
@@ -210,8 +221,9 @@ footer {
     .hero h1 { font-size: 3rem; }
     .location-layout { grid-template-columns: 1fr; }
 
-    /* Keeps top photo appropriate on mobile screens */
-    .featured-img {
-        height: 400px !important;
+    /* Ensure top image looks good on small screens */
+    .top-image {
+        width: 100%;
+        height: 300px;
     }
 }
